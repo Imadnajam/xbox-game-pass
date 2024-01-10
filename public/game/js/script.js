@@ -5,16 +5,12 @@ let activeId = null;
 let timer = startTimer();
 
 buttons.forEach((button) => {
-    button.addEventListener('click', ($event) =>
-        select($event.target.dataset.slide)
-    );
+    button.addEventListener('click', ($event) => select($event.target.dataset.slide));
 });
 
 function startTimer() {
     return setInterval(() => {
-        const nextButton =
-            getActiveButton().nextElementSibling ||
-            document.querySelector('.preview-element');
+        const nextButton = getActiveButton().nextElementSibling || document.querySelector('.preview-element');
         if (nextButton) {
             select(nextButton.dataset.slide);
         }
@@ -26,7 +22,8 @@ function select(slideId) {
         return;
     }
     activeId = slideId;
-    removeActiveSlide(slideId);
+    console.log('Selected Slide:', slideId);
+    removeActiveSlide();
     setNextSlidePreview(slideId);
     removeActiveButton();
     addActiveButton(slideId);
@@ -36,26 +33,38 @@ function select(slideId) {
 
 function setActiveSlide(id) {
     const activeSlide = document.querySelector(`#slider-${id}`);
-    activeSlide.classList.add(activeClass);
+    if (activeSlide) {
+        activeSlide.classList.add(activeClass);
+        console.log('Set Active Slide:', id);
+    }
 }
 
-function removeActiveSlide(id) {
+function removeActiveSlide() {
     const activeSlide = document.querySelector('.slider-content.active');
-    activeSlide.classList.remove(activeClass);
+    if (activeSlide) {
+        activeSlide.classList.remove(activeClass);
+        console.log('Removed Active Slide');
+    }
 }
 
 function setNextSlidePreview(id) {
     const preview = document.querySelector(`#slider-${id}`);
-    preview.classList.add(previewClass);
-    setTimeout(() => {
-        setActiveSlide(id);
-        preview.classList.remove(previewClass);
-    }, 250);
+    if (preview) {
+        preview.classList.add(previewClass);
+        setTimeout(() => {
+            setActiveSlide(id);
+            preview.classList.remove(previewClass);
+        }, 250);
+        console.log('Set Next Slide Preview:', id);
+    }
 }
 
 function addActiveButton(id) {
     const activeButton = document.querySelector(`[data-slide="${id}"]`);
-    activeButton.classList.add(activeClass);
+    if (activeButton) {
+        activeButton.classList.add(activeClass);
+        console.log('Added Active Button:', id);
+    }
 }
 
 function getActiveButton() {
@@ -63,5 +72,9 @@ function getActiveButton() {
 }
 
 function removeActiveButton() {
-    getActiveButton().classList.remove(activeClass);
+    const activeButton = getActiveButton();
+    if (activeButton) {
+        activeButton.classList.remove(activeClass);
+        console.log('Removed Active Button');
+    }
 }

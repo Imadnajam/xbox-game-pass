@@ -49,15 +49,13 @@
                 <div id="slider-4" class="slider-content">
                     <div class="info">
                         <h3>{{ $game['productTitle'] }}</h3>
-                        <p>
-                            {{ $game['productDescription'] }}
-                        </p>
+                        <p>{{ $game['productDescription'] }}</p>
                         <button>Hemen Ön Satın Alım Yap</button>
                     </div>
-                    <div class="background"
-                        style="background-image: url('{{$game['images']['Screenshot'][3]}};">
+                    <div class="background" style="background-image: url('{{$game['images']['Screenshot'][3]}}');">
                     </div>
                 </div>
+                
                 <div id="slider-5" class="slider-content">
                     <div class="info">
                         <h3>{{ $game['productTitle'] }}</h3>
