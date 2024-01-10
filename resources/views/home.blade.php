@@ -101,19 +101,11 @@
                 <ul class="navbar-list">
 
                     <li>
-                        <a href="#hero" class="navbar-link">Home</a>
+                        <a href="{{route('home')}}" class="navbar-link">Home</a>
                     </li>
 
                     <li>
                         <a href="#about" class="navbar-link">About</a>
-                    </li>
-
-                    <li>
-                        <a href="#tournament" class="navbar-link">Tournament</a>
-                    </li>
-
-                    <li>
-                        <a href="#team" class="navbar-link">Team</a>
                     </li>
 
                     <li>
@@ -235,37 +227,23 @@
 
                             <li>
                                 <figure class="gallery-item">
-                                    <img src="{{asset('home/images/img1.jpg') }}" alt="Gallery image" style="width: 500px">
+                                    <img src="{{asset('home/images/img1.png') }}" alt="Gallery image" >
                                 </figure>
                             </li>
 
                             <li>
                                 <figure class="gallery-item">
-                                    <img src="{{asset('home/images/img2.jpg') }}" alt="Gallery image" style="width: 500px" >
+                                    <img src="{{asset('home/images/img2.png') }}" alt="Gallery image"  >
                                 </figure>
                             </li>
 
                             <li>
                                 <figure class="gallery-item">
-                                    <img src="{{asset('home/images/img3.jpg') }}" alt="Gallery image" style="width: 500px">
+                                    <img src="{{asset('home/images/img3.png') }}" alt="Gallery image" >
                                 </figure>
                             </li>
 
-                            <li>
-                                <figure class="gallery-item">
-                                    <img src="{{asset('home/images/img4.svg') }}" alt="Gallery image" style="width: 500px">
-                                </figure>
-                            </li>
-                            <li>
-                                <figure class="gallery-item">
-                                    <img src="{{asset('home/images/img5.svg') }}" alt="Gallery image" style="width: 500px">
-                                </figure>
-                            </li>
-                            <li>
-                                <figure class="gallery-item">
-                                    <img src="{{asset('home/images/img6.svg') }}" alt="Gallery image" style="width: 500px">
-                                </figure>
-                            </li>
+                           
 
                         </ul>
 
