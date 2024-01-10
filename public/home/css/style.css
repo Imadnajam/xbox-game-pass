@@ -563,7 +563,7 @@ body.active { overflow-y: hidden; }
 }
 
 .winner-card .card-banner {
-  max-width: 90px;
+  max-width: 400px;
   margin-inline: auto;
   margin-bottom: 15px;
 }

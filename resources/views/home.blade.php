@@ -276,24 +276,24 @@
                                     <div class="gears-card">
                                         <div class="card-banner">
                                             <a href="#">
-                                                <img src="{{ $game['images']['Poster'][0] }}"
-                                                    alt="{{ $game['productTitle'] }}">
+                                                <img src="{{ $game['background_image']}}"
+                                                    alt="{{ $game['name'] }}" style="width: 400px">
                                             </a>
                                             <button class="share">
                                                 <ion-icon name="share-social"></ion-icon>
                                             </button>
                                             <div class="card-time-wrapper">
                                                 <ion-icon name="time-outline"></ion-icon>
-                                                <span>{{ $game['releaseDate'] }}</span>
+                                                <span>{{ $game['released'] }}</span>
                                             </div>
                                         </div>
 
                                         <div class="card-content">
                                             <div class="card-title-wrapper">
-                                                <h3 class="h3 card-title">{{ $game['productTitle'] }}</h3>
+                                                <h3 class="h3 card-title">{{ $game['name'] }}</h3>
                                                 <p class="card-subtitle">Xbox</p>
                                             </div>
-                                            <div class="card-prize">${{ $game['pricing']['ListPrice'] }}</div>
+                                            <div class="card-prize">$</div>
                                         </div>
 
                                         <div class="card-actions">

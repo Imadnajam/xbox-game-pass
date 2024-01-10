@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+
+use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -13,9 +15,18 @@ class HomeController extends Controller
 {
     public function Homepage(){
 
+/*
         $filePath = storage_path('app/game4.json');
         $jsonContent = file_get_contents($filePath);
         $games = json_decode($jsonContent, true);
+    */
+    $apiKey = env('API_KEY');
+    $response = Http::get("https://api.rawg.io/api/games?key={$apiKey}&page_size=100");
+    
+    // Check if the request was successful
+    if ($response->successful()) {
+        // Decode the JSON response
+        $games = $response->json()['results'];
     
         $perPage = 6;
         $currentPage = request('page', 1);
@@ -34,6 +45,7 @@ class HomeController extends Controller
             ]
         );
     
-
-    return view('home', compact('gamesPaginated'));
+        return view('home', compact('gamesPaginated'));
+    }
+    
 }}
