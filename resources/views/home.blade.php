@@ -28,7 +28,37 @@
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@400;500;700&display=swap"
         rel="stylesheet">
 
-
+        <style>
+            .pagination {
+                color: white;
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                padding: 0;
+            }
+        
+            .pagination li {
+                margin: 0 5px;
+                display: inline-block;
+            }
+        
+            .pagination a, .pagination span {
+                padding: 8px 12px;
+                border: 1px solid #ccc;
+                text-decoration: none;
+                color: #333;
+                border-radius: 4px;
+            }
+        
+            .pagination .active span {
+                background-color: #007bff;
+                color: #fff;
+            }
+        
+            .pagination a:hover {
+                background-color: #f0f0f0;
+            }
+        </style>
 </head>
 
 <body id="top">
@@ -291,10 +321,13 @@
                                 </li>
                             @endforeach
 
-                            <div class="pagination justify-content-center">
-                                {{ $gamesPaginated->links() }}
-                            </div>
+                          
+                           
                         </ul>
+                        <br>
+                        <div class="pagination justify-content-center">
+                            {{ $gamesPaginated->links('pagination::bootstrap-4') }}
+                        </div>
 
                     </div>
                 </section>
@@ -307,31 +340,7 @@
           - #NEWSLETTER
         -->
 
-                <section class="newsletter">
-                    <div class="container">
-
-                        <div class="newsletter-card">
-
-                            <div class="newsletter-content">
-                                <figure class="newsletter-img">
-                                    <img src="{{ asset('home/images/newsletter-img.png') }}" alt="Newsletter image">
-                                </figure>
-
-                                <h2 class="h2 newsletter-title">Subscribe to our newsletter</h2>
-                            </div>
-
-                            <form action="" class="newsletter-form">
-                                <input type="email" name="email" required placeholder="Your Email Address"
-                                    class="input-field">
-
-                                <button type="submit" class="btn btn-secondary">Subscribe</button>
-                            </form>
-
-                        </div>
-
-                    </div>
-                </section>
-
+                
             </div>
 
         </article>

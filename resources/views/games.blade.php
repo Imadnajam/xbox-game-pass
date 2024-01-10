@@ -5,7 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('game/css/style.css') }}">
+   
     <title>EpicGames Store</title>
+    <style>
+        .pagination {
+            color: white;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+    
+        .pagination li {
+            margin: 0 5px;
+            display: inline-block;
+        }
+    
+        .pagination a, .pagination span {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            text-decoration: none;
+            color: #333;
+            border-radius: 4px;
+        }
+    
+        .pagination .active span {
+            background-color: #007bff;
+            color: #fff;
+        }
+    
+        .pagination a:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
 </head>
 
 <body>
@@ -90,10 +122,11 @@
         </div>
     @endforeach
     <div class="pagination justify-content-center">
-        {{ $gamesPaginated->links() }}
+        {{ $gamesPaginated->links('pagination::bootstrap-4') }}
     </div>
-
+    
     <script src="{{ asset('game/js/script.js') }}"></script>
+
 </body>
 
 </html>

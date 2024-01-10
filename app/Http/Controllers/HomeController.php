@@ -13,7 +13,7 @@ class HomeController extends Controller
 {
     public function Homepage(){
 
-        $filePath = storage_path('app/game2.json');
+        $filePath = storage_path('app/game4.json');
         $jsonContent = file_get_contents($filePath);
         $games = json_decode($jsonContent, true);
     

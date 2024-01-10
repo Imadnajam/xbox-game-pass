@@ -22,7 +22,7 @@ html {
     height:max-content;
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 100px;
     justify-content: center;
     align-items: center;
     background-color: #0c1016;
@@ -45,13 +45,13 @@ html * {
 .epic-slider {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     max-width: 100rem;
     aspect-ratio: 2;
 }
 
 .epic-slider .epic-slider-view {
-    width: 80%;
+    width: 100%;
     border-radius: 1.5rem;
     overflow: hidden;
     position: relative;
