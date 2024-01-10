@@ -31,7 +31,7 @@
                         </p>
                         <button>{{ $game['developerName'] }}</button>
                     </div>
-                    <div class="background" style="background-image: url('');">
+                    <div class="background" style="background-image: url('{{$game['images']['Screenshot'][1]}}');">
                     </div>
                 </div>
                 <div id="slider-3" class="slider-content">
@@ -43,7 +43,7 @@
                         <button>Hemen Ön Satın Alım Yap</button>
                     </div>
                     <div class="background"
-                        style="background-image: url('img/pd3-egs-carousel-desktop-16x9-image-1248x702-a3a08c1de90e.avif');">
+                        style="background-image: url('{{$game['images']['Screenshot'][2]}}');">
                     </div>
                 </div>
                 <div id="slider-4" class="slider-content">
@@ -55,7 +55,7 @@
                         <button>Hemen Ön Satın Alım Yap</button>
                     </div>
                     <div class="background"
-                        style="background-image: url('img/pd3-egs-carousel-desktop-16x9-image-1248x702-a3a08c1de90e.avif');">
+                        style="background-image: url('{{$game['images']['Screenshot'][3]}};">
                     </div>
                 </div>
                 <div id="slider-5" class="slider-content">
@@ -67,7 +67,7 @@
                         <button>Hemen Ön Satın Alım Yap</button>
                     </div>
                     <div class="background"
-                        style="background-image: url('img/pd3-egs-carousel-desktop-16x9-image-1248x702-a3a08c1de90e.avif');">
+                        style="background-image: url('{{$game['images']['Screenshot'][1]}}');">
                     </div>
                 </div>
             </div>
