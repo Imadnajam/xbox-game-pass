@@ -87,7 +87,7 @@
                     </li>
 
                     <li>
-                        <a href="#gears" class="navbar-link">Gears</a>
+                        <a href="{{route('game')}}" class="navbar-link">Games</a>
                     </li>
 
                     <li>
