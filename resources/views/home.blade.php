@@ -76,7 +76,7 @@
 
         <div class="container">
 
-            <a href="#" class="logo">
+            <a href="#" class="logo" >
                 <img src="{{ asset('home/images/logo.svg') }}" alt="GameX logo">
             </a>
 
@@ -235,25 +235,35 @@
 
                             <li>
                                 <figure class="gallery-item">
-                                    <img src="./assets/images/gallery-img-1.jpg" alt="Gallery image">
+                                    <img src="{{asset('home/images/img1.jpg') }}" alt="Gallery image" style="width: 500px">
                                 </figure>
                             </li>
 
                             <li>
                                 <figure class="gallery-item">
-                                    <img src="./assets/images/gallery-img-2.jpg" alt="Gallery image">
+                                    <img src="{{asset('home/images/img2.jpg') }}" alt="Gallery image" style="width: 500px" >
                                 </figure>
                             </li>
 
                             <li>
                                 <figure class="gallery-item">
-                                    <img src="./assets/images/gallery-img-3.jpg" alt="Gallery image">
+                                    <img src="{{asset('home/images/img3.jpg') }}" alt="Gallery image" style="width: 500px">
                                 </figure>
                             </li>
 
                             <li>
                                 <figure class="gallery-item">
-                                    <img src="./assets/images/gallery-img-4.jpg" alt="Gallery image">
+                                    <img src="{{asset('home/images/img4.svg') }}" alt="Gallery image" style="width: 500px">
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="gallery-item">
+                                    <img src="{{asset('home/images/img5.svg') }}" alt="Gallery image" style="width: 500px">
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="gallery-item">
+                                    <img src="{{asset('home/images/img6.svg') }}" alt="Gallery image" style="width: 500px">
                                 </figure>
                             </li>
 
