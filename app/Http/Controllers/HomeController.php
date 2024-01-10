@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function Homepage(){
-        return view('home');
+
+        $filePath = storage_path('app/game2.json');
+        $jsonContent = file_get_contents($filePath);
+        $games = json_decode($jsonContent, true);
+        return view('home',['games'=>$games]);
     }
 }
