@@ -15,7 +15,7 @@
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="{{asset('home/css/style.css')}}">
 
   <!-- 
     - google font link
@@ -43,7 +43,7 @@
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" alt="GameX logo">
+        <img src="{{asset('home/images/logo.svg')}}" alt="GameX logo">
       </a>
 
       <button class="nav-open-btn" data-nav-open-btn>
@@ -55,7 +55,7 @@
         <div class="navbar-top">
 
           <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="GameX logo">
+            <img src="{{asset('home/images/logo.svg')}}" alt="GameX logo">
           </a>
 
           <button class="nav-close-btn" data-nav-close-btn>
@@ -183,121 +183,8 @@
 
       <div class="section-wrapper">
 
-        <!-- 
-          - #ABOUT
-        -->
+      
 
-        <section class="about" id="about">
-          <div class="container">
-
-            <figure class="about-banner">
-
-              <img src="./assets/images/about-img.png" alt="M shape" class="about-img">
-
-              <img src="./assets/images/character-1.png" alt="Game character" class="character character-1">
-
-              <img src="./assets/images/character-2.png" alt="Game character" class="character character-2">
-
-              <img src="./assets/images/character-3.png" alt="Game character" class="character character-3">
-
-            </figure>
-
-            <div class="about-content">
-
-              <p class="about-subtitle">Find team member</p>
-
-              <h2 class="about-title">Experience just for gamers <strong>offer</strong> </h2>
-
-              <p class="about-text">
-                Nullam quis ante. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum
-                viverra felis nunc
-                et lorem. In auctor lobortis lacus. Phasellus gravida semper nisi. Aliquam lobortis.
-              </p>
-
-              <p class="about-bottom-text">
-                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-
-                <span>Will sharpen your brain and focus</span>
-              </p>
-
-            </div>
-
-          </div>
-        </section>
-
-
-
-
-
-        <!-- 
-          - #TOURNAMENT
-        -->
-
-        <section class="tournament" id="tournament">
-          <div class="container">
-
-            <div class="tournament-content">
-
-              <p class="tournament-subtitle">Check out our next</p>
-
-              <h2 class="h3 tournament-title">Gaming tournaments !</h2>
-
-              <p class="tournament-text">
-                Lpsum dolor sit amet, consectetur adipiscing elit, sed labore et dolore magna aliqua.
-              </p>
-
-              <button class="btn btn-primary">Join with us</button>
-
-            </div>
-
-            <div class="tournament-prize">
-
-              <h2 class="h3 tournament-prize-title">Prize pool</h2>
-
-              <data value="80000">$80000</data>
-
-              <figure>
-                <img src="./assets/images/prize-img.png" alt="Prize image">
-              </figure>
-
-            </div>
-
-            <div class="tournament-winners">
-
-              <h2 class="h3 tournament-winners-title">Last winners</h2>
-
-              <ul class="tournament-winners-list">
-
-                <li>
-                  <div class="winner-card">
-
-                    <figure class="card-banner">
-                      <img src="./assets/images/winner-img-1.png" alt="Winner image">
-                    </figure>
-
-                    <h3 class="h5 card-title">1st place</h3>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="winner-card">
-
-                    <figure class="card-banner">
-                      <img src="./assets/images/winner-img-2.png" alt="Winner image">
-                    </figure>
-
-                    <h3 class="h5 card-title">2nd place</h3>
-
-                  </div>
-                </li>
-
-              </ul>
-
-            </div>
-
-          </div>
-        </section>
 
 
 
@@ -349,132 +236,7 @@
           - #TEAM
         -->
 
-        <section class="team" id="team">
-          <div class="container">
-
-            <h2 class="h2 section-title">Active Team Members</h2>
-
-            <ul class="team-list">
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-1.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-2.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-3.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-4.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-6.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-7.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-8.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-9.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-10.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-11.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="team-member">
-                  <figure>
-                    <img src="./assets/images/team-member-12.png" alt="Team member image">
-                  </figure>
-
-                  <ion-icon name="link-outline"></ion-icon>
-                </a>
-              </li>
-
-            </ul>
-
-            <button class="btn btn-primary">view all members</button>
-
-          </div>
-        </section>
-
-
-
+       
 
 
         <!-- 
@@ -664,7 +426,7 @@
 
               <div class="newsletter-content">
                 <figure class="newsletter-img">
-                  <img src="./assets/images/newsletter-img.png" alt="Newsletter image">
+                  <img src="{{asset('home/images/newsletter-img.png')}}" alt="Newsletter image">
                 </figure>
 
                 <h2 class="h2 newsletter-title">Subscribe to our newsletter</h2>
@@ -702,7 +464,7 @@
         <div class="footer-brand-wrapper">
 
           <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="GameX logo">
+            <img src="{{asset('home/images/logo.svg')}}" alt="GameX logo">
           </a>
 
           <div class="footer-menu-wrapper">
@@ -805,11 +567,11 @@
     <div class="footer-bottom">
       <div class="container">
         <p class="copyright">
-          Copyright &copy; 2022 <a href="#">codewithsadee</a>. all rights reserved
+          Copyright &copy; 2024 <a href="#">Imad Najam</a>. all rights reserved
         </p>
 
         <figure class="footer-bottom-img">
-          <img src="./assets/images/footer-bottom-img.png" alt="Online payment companies logo">
+          <img src="{{asset('home/images/logo.svg')}}" alt="Online payment companies logo">
         </figure>
       </div>
     </div>
