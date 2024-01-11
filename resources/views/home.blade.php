@@ -160,7 +160,7 @@
                         <ion-icon name="log-in-outline"></ion-icon>
                     </div>
 
-                    <span>Log-in</span>
+                    <a href="{{route('login')}}" style="color: white"><span>Log-in</span></a>
 
                 </button>
 
