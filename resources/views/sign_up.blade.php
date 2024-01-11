@@ -21,16 +21,24 @@
             <button class="switch"><img src="{{ asset('auth/img/switch.png') }}" alt=""></button>
         </div>
 
-        <h6>Sign In</h6>
+        <h6>Sign up</h6>
 
         <form action="">
             <div class="textbox">
-                <input type="text" placeholder="Username or Email">
+                <input type="text" placeholder="Username">
+                <span class="check-message hidden">Required</span>
+            </div>
+            <div class="textbox">
+                <input type="email" placeholder="Email">
                 <span class="check-message hidden">Required</span>
             </div>
 
             <div class="textbox">
                 <input type="password" placeholder="Password">
+                <span class="check-message hidden">Required</span>
+            </div>
+            <div class="textbox">
+                <input type="password" placeholder="Confirm Password">
                 <span class="check-message hidden">Required</span>
             </div>
 
@@ -54,7 +62,7 @@
 
         <div class="dont-have-account">
            you have an XBOX Games account?
-            <a href="#">Sign Up</a>
+            <a href="{{route('login')}}">Sign Up</a>
         </div>
     </div>
 
