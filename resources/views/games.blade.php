@@ -42,6 +42,11 @@
 </head>
 
 <body>
+
+    <a href="{{route('home')}}" class="logo" >
+        <img src="{{ asset('home/images/logo.svg') }}" alt="GameX logo">
+    </a>
+
     @foreach ($gamesPaginated as $gameId => $game)
         <div class="epic-slider">
             <div class="epic-slider-view">
@@ -118,6 +123,8 @@
 
         </div>
     @endforeach
+
+  
     <div class="pagination justify-content-center">
         {{ $gamesPaginated->links('pagination::bootstrap-4') }}
     </div>
