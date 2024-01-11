@@ -277,7 +277,7 @@
                                         <div class="card-banner">
                                             <a href="#">
                                                 <img src="{{ $game['background_image']}}"
-                                                    alt="{{ $game['name'] }}" style="width: 400px">
+                                                    alt="{{ $game['name'] }}" style="width: 300px">
                                             </a>
                                             <button class="share">
                                                 <ion-icon name="share-social"></ion-icon>
