@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -9,9 +9,14 @@ use Illuminate\Pagination\LengthAwarePaginator;
 class gamesController extends Controller
 {
     public function gameall(){
-        $filePath = storage_path('app/game5.json');
-        $jsonContent = file_get_contents($filePath);
-        $games = json_decode($jsonContent, true);
+        $apiKey = env('API_KEY');
+        
+    $response = Http::get("https://api.rawg.io/api/games?key={$apiKey}&page_size=100&page=5");
+    
+    // Check if the request was successful
+    if ($response->successful()) {
+        // Decode the JSON response
+        $games = $response->json()['results'];
     
         $perPage = 6;
         $currentPage = request('page', 1);
@@ -30,7 +35,8 @@ class gamesController extends Controller
             ]
         );
     
-        return view ('games',compact('gamesPaginated'));
+        return view('games', compact('gamesPaginated'));
+    }
     }
 
     
