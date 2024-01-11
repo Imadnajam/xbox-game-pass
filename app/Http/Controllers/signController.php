@@ -6,5 +6,7 @@ use Illuminate\Http\Request;
 
 class signController extends Controller
 {
-    //
+    public function sign(){
+        return view('sign_up');
+    }
 }
