@@ -107,7 +107,7 @@
                     <div class="epic-slider-preview">
                         @php
                             // Get the first 4 screenshots or less if there are fewer than 4
-                            $limitedScreenshots = array_slice($game['short_screenshots'], 0, 4);
+                            $limitedScreenshots = array_slice($game['short_screenshots'], 0, 5);
                         @endphp
                       @foreach ($limitedScreenshots as $index => $screenshot)
                       <button data-slide="{{ $index + 1 }}" class="{{ $index == 0 ? 'active' : '' }} preview-element">
