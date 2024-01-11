@@ -11,7 +11,7 @@ class gamesController extends Controller
     public function gameall(){
         $apiKey = env('API_KEY');
         
-    $response = Http::get("https://api.rawg.io/api/games?key={$apiKey}&page_size=100&page=2");
+    $response = Http::get("https://api.rawg.io/api/games?key={$apiKey}&page_size=100&page=1");
     
     // Check if the request was successful
     if ($response->successful()) {

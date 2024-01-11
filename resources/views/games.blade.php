@@ -109,7 +109,7 @@
                           <div style="background-image: url('{{ $screenshot['image'] }}')" class="img" id="screenshot_{{ $screenshot['id'] }}"></div>
                           
                       </button>
-                  @endforeach
+                     @endforeach
                   
                     </div>
                 @endif
