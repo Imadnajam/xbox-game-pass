@@ -374,7 +374,7 @@ body.active { overflow-y: hidden; }
 \*-----------------------------------*/
 
 .hero {
-  background: url("../images/hero-banner.jpg") no-repeat;
+  background: url("../images/hero-banner.png") no-repeat;
   background-size: cover;
   background-position: top center;
   margin-top: 90px;
