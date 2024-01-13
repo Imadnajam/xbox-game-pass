@@ -16,7 +16,7 @@
 - **🎁 Exclusive perks for subscribers**
 - **🚨 Real-time notifications**
 
-💻 Responsive design**
+- **💻 Responsive design**
 🛠️ Built with Laravel**
 🔒 Secure user authentication**
 💡 Intuitive user interface**
