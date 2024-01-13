@@ -2,7 +2,7 @@
 
 🚀 Laravel Xbox Game Pass Web App:
 
-🌐 A dynamic web platform seamlessly integrating with the Xbox Game Pass API
+**__🌐 A dynamic web platform seamlessly integrating with the Xbox Game Pass API__**
 
 - **🎮 Explore the latest games**
 - **📊 Track your gaming progress**
