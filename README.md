@@ -14,7 +14,7 @@
 - **👥 Share achievements with friends**
 - **📈 Leaderboards and stats**
 - **🎁 Exclusive perks for subscribers**
-🚨 Real-time notifications**
+- **🚨 Real-time notifications**
 
 💻 Responsive design**
 🛠️ Built with Laravel**
