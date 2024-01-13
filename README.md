@@ -5,22 +5,22 @@
 🌐 A dynamic web platform seamlessly integrating with the Xbox Game Pass API
 
 - **🎮 Explore the latest games**
-📊 Track your gaming progress
-🔍 Discover hidden gems
-🚀 Stay updated with new releases
-🌟 Personalized recommendations
+- **📊 Track your gaming progress**
+- **🔍 Discover hidden gems**
+- **🚀 Stay updated with new releases**
+-  **🌟 Personalized recommendations**
 
-🔗 Connect with Xbox Live
-👥 Share achievements with friends
-📈 Leaderboards and stats
-🎁 Exclusive perks for subscribers
-🚨 Real-time notifications
+- **🔗 Connect with Xbox Live**
+- **👥 Share achievements with friends**
+- **📈 Leaderboards and stats**
+- **🎁 Exclusive perks for subscribers**
+🚨 Real-time notifications**
 
-💻 Responsive design
-🛠️ Built with Laravel
-🔒 Secure user authentication
-💡 Intuitive user interface
-🚀 Elevate your gaming experience!
+💻 Responsive design**
+🛠️ Built with Laravel**
+🔒 Secure user authentication**
+💡 Intuitive user interface**
+🚀 Elevate your gaming experience!**
 
 ## Table of Contents
 - [Features](#features)
