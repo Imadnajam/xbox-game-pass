@@ -17,10 +17,10 @@
 - **🚨 Real-time notifications**
 
 - **💻 Responsive design**
-🛠️ Built with Laravel**
-🔒 Secure user authentication**
-💡 Intuitive user interface**
-🚀 Elevate your gaming experience!**
+- **🛠️ Built with Laravel**
+- **🔒 Secure user authentication**
+- **💡 Intuitive user interface**
+- **🚀 Elevate your gaming experience!**
 
 ## Table of Contents
 - [Features](#features)
