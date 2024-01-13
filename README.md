@@ -4,7 +4,7 @@
 
 🌐 A dynamic web platform seamlessly integrating with the Xbox Game Pass API
 
-🎮 Explore the latest games
+- **🎮 Explore the latest games**
 📊 Track your gaming progress
 🔍 Discover hidden gems
 🚀 Stay updated with new releases
