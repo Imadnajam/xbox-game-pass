@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('game/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('gameData/css/style.css') }}">
 
-    <title>EpicGames Store</title>
+    <title>{{ $gameData['name'] }}</title>
     <style>
 
         .pagination {
@@ -45,7 +45,7 @@
 <body>
 
     <a href="{{route('home')}}" class="logo" >
-        <img src="{{ asset('home/images/logo.svg') }}" alt="GameX logo">
+        <img src="{{ asset('home/images/logo.svg') }}" alt="gameDataX logo">
     </a>
 
     
@@ -53,62 +53,62 @@
             <div class="epic-slider-view">
                 <div id="slider-1" class="slider-content active">
                     <div class="info">
-                        <h3>{{ $game['name'] }}</h3>
+                        <h3>{{ $gameData['name'] }}</h3>
 
                         <button> add to cart</button>
                     </div>
-                    <div class="background" style="background-image: url('{{ $game['background_image'] }}');">
+                    <div class="background" style="background-image: url('{{ $gameData['background_image'] }}');">
                     </div>
                 </div>
                 <div id="slider-2" class="slider-content">
                     <div class="info">
-                        <h3>{{ $game['name'] }}</h3>
+                        <h3>{{ $gameData['name'] }}</h3>
 
                         <button>add to cart</button>
                     </div>
                     <div class="background"
-                        style="background-image: url('{{ $game['short_screenshots'][1]['image'] }}');">
+                        style="background-image: url('{{ $gameData['short_screenshots'][1]['image'] }}');">
                     </div>
                 </div>
                 <div id="slider-3" class="slider-content">
                     <div class="info">
-                        <h3>{{ $game['name'] }}</h3>
+                        <h3>{{ $gameData['name'] }}</h3>
 
                         <button>add to cart</button>
                     </div>
                     <div class="background"
-                        style="background-image: url('{{ $game['short_screenshots'][2]['image'] }}');">
+                        style="background-image: url('{{ $gameData['short_screenshots'][2]['image'] }}');">
                     </div>
                 </div>
                 <div id="slider-4" class="slider-content">
                     <div class="info">
-                        <h3>{{ $game['name'] }}</h3>
+                        <h3>{{ $gameData['name'] }}</h3>
 
                         <button>add to cart</button>
                     </div>
                     <div class="background"
-                        style="background-image: url('{{ $game['short_screenshots'][3]['image'] }}');">
+                        style="background-image: url('{{ $gameData['short_screenshots'][3]['image'] }}');">
                     </div>
                 </div>
 
                 <div id="slider-5" class="slider-content">
                     <div class="info">
-                        <h3>{{ $game['name'] }}</h3>
+                        <h3>{{ $gameData['name'] }}</h3>
 
                         <button>add to cart</button>
                     </div>
                     <div class="background"
-                        style="background-image: url('{{ $game['short_screenshots'][4]['image'] }}');">
+                        style="background-image: url('{{ $gameData['short_screenshots'][4]['image'] }}');">
                     </div>
                 </div>
             </div>
             
-                <!-- Inside the loop where you display game information -->
-                @if (isset($game['short_screenshots']) && is_array($game['short_screenshots']))
+                <!-- Inside the loop where you display gameData information -->
+                @if (isset($gameData['short_screenshots']) && is_array($gameData['short_screenshots']))
                     <div class="epic-slider-preview">
                         @php
                             // Get the first 4 screenshots or less if there are fewer than 4
-                            $limitedScreenshots = array_slice($game['short_screenshots'], 0, 5);
+                            $limitedScreenshots = array_slice($gameData['short_screenshots'], 0, 5);
                         @endphp
                       @foreach ($limitedScreenshots as $index => $screenshot)
                       <button data-slide="{{ $index + 1 }}" class="{{ $index == 0 ? 'active' : '' }} preview-element">
@@ -128,12 +128,12 @@
   
    
 
-    <script src="{{ asset('game/js/script.js') }}"></script>
+    <script src="{{ asset('gameData/js/script.js') }}"></script>
     
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
-    var currentPage = {{ $gamesPaginated->currentPage() }};
-    var lastPage = {{ $gamesPaginated->lastPage() }};
+    var currentPage = {{ $gameDatasPaginated->currentPage() }};
+    var lastPage = {{ $gameDatasPaginated->lastPage() }};
     var isFetching = false;
 
     $(document).ready(function() {
@@ -147,11 +147,11 @@
     function checkAndLoadMore() {
         if (currentPage < lastPage && !isFetching) {
             currentPage++;
-            loadMoreGames(currentPage);
+            loadMoregameDatas(currentPage);
         }
     }
 
-    function loadMoreGames(page) {
+    function loadMoregameDatas(page) {
         isFetching = true;
         $.ajax({
             url: "{{ url()->current() }}?page=" + page,
@@ -159,7 +159,7 @@
             dataType: "html",
             success: function(data) {
                 if (data.trim() !== "") {
-                    $("#games-container").append(data);
+                    $("#gameDatas-container").append(data);
                 }
                 isFetching = false;
 
