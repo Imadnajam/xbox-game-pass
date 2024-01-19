@@ -11,7 +11,7 @@ class gamesController extends Controller
     
         public function gameall(){
             $apiKey = env('API_KEY');
-            $perPage = 20;
+            $perPage = 30;
             $totalPagesToFetch = 20;  
         
             $allGames = [];

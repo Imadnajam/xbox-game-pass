@@ -56,7 +56,7 @@
     <!--
     - custom js link
   -->
-    <script src="./assets/js/script.js"></script>
+    <script src="{{asset('home/js/script.js')}}"></script>
 
     <!--
     - ionicon link
