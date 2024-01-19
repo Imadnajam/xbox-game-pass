@@ -45,7 +45,7 @@
           
            
         </ul>
-        <br>
+        <br><br><br>
         <div class="pagination justify-content-center">
             {{ $gamesPaginated->links('pagination::bootstrap-4') }}
         </div>
