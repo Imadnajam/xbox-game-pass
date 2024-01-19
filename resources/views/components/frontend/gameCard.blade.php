@@ -8,7 +8,7 @@
                 <li>
                     <div class="gears-card">
                         <div class="card-banner">
-                            <a href="{{route('GameDetaille',['id'=>$game['id'] ,'short_screenshots'=>$game['short_screenshots']])}}">
+                            <a href="{{route('GameDetaille',['id'=>$game['id']])}}">
                                 <img src="{{ $game['background_image']}}"
                                     alt="{{ $game['name'] }}" style="width: 300px">
                             </a>
