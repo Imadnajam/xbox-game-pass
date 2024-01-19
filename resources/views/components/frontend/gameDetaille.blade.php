@@ -8,6 +8,7 @@
 
     <title>EpicGames Store</title>
     <style>
+
         .pagination {
             color: white;
             display: flex;
@@ -47,7 +48,7 @@
         <img src="{{ asset('home/images/logo.svg') }}" alt="GameX logo">
     </a>
 
-    @foreach ($gamesPaginated as $gameId => $game)
+    
         <div class="epic-slider">
             <div class="epic-slider-view">
                 <div id="slider-1" class="slider-content active">
@@ -122,12 +123,10 @@
            
 
         </div>
-    @endforeach
+   
 
   
-    <div class="pagination justify-content-center">
-        {{ $gamesPaginated->links('pagination::bootstrap-4') }}
-    </div>
+   
 
     <script src="{{ asset('game/js/script.js') }}"></script>
     
