@@ -47,7 +47,7 @@
         }
     
         .pagination .active span {
-            background-color: #0e7a0d;
+            background-color: #005B41;
             color: #fff;
         }
     
