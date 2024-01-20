@@ -2,9 +2,7 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 @codewithsadee
- */
+
 
 
 
@@ -27,7 +25,7 @@
   --light-gray: hsl(0, 0%, 80%);
   --platinum: hsl(0, 4%, 91%);
   --xiketic: hsl(275, 24%, 10%);
-  --orange: #ffd900b4;
+  --orange: #16FF00;
   --white: hsl(0, 0%, 100%);
   --onyx: hsl(240, 5%, 26%);
 

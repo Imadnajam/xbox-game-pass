@@ -10,7 +10,7 @@
                         <div class="card-banner">
                             <a href="{{route('GameDetaille',['id'=>$game['id']])}}">
                                 <img src="{{ $game['background_image']}}"
-                                    alt="{{ $game['name'] }}" style="width: 300px">
+                                    alt="{{ $game['name'] }}" style="width: 250px">
                             </a>
                             <button class="share">
                                 <ion-icon name="share-social"></ion-icon>
