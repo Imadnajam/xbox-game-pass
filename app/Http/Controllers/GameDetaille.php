@@ -11,11 +11,14 @@ class GameDetaille extends Controller
        
         $response = Http::get("https://api.rawg.io/api/games/{$id}?key={$apiKey}&page_size=100");
         $response1 = Http::get("https://api.rawg.io/api/games/{$id}/screenshots?key={$apiKey}&page_size=100");
+        $response2 = Http::get("https://api.rawg.io/api/games/{$id}/movies?key={$apiKey}&page_size=100");
+        
         
         
         $gameData = $response->json(); 
         $screenshots = $response1->json(); 
-        return view('components.frontend.gameDetaille', ['gameData' => $gameData ,'screenshots'=>$screenshots]);
+        $movies = $response2->json(); 
+        return view('components.frontend.gameDetaille', ['gameData' => $gameData ,'screenshots'=>$screenshots,'movies'=>$movies]);
     }
     
 }
