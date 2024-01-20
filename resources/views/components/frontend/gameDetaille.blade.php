@@ -5,12 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('game/css/style.css') }}">
-   
+    <!-- Bootstrap core CSS -->
+    <link href="demo-template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Moovie CSS Style -->
+    <link rel="stylesheet" type="text/css" href=" {{ asset('game/js/moovie.css') }}">
+
+    <!-- GFonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+
 
 
     <title>{{ $gameData['name'] }}</title>
     <style>
-
         .pagination {
             color: white;
             display: flex;
@@ -46,7 +55,7 @@
 
 <body>
 
-    <a href="{{route('home')}}" class="logo" >
+    <a href="{{ route('home') }}" class="logo">
         <img src="{{ asset('home/images/logo.svg') }}" alt="gameDataX logo">
     </a>
 
@@ -63,26 +72,28 @@
                 </div>
             @endforeach
         </div>
-    
+
         @if (isset($screenshots['results']) && is_array($screenshots['results']))
             <div class="epic-slider-preview">
                 @foreach ($screenshots['results'] as $index => $screenshot)
                     <button data-slide="{{ $index + 1 }}" class="{{ $index == 0 ? 'active' : '' }} preview-element">
-                        <div style="background-image: url('{{ $screenshot['image'] }}')" class="img" id="screenshot_{{ $screenshot['id'] }}"></div>
+                        <div style="background-image: url('{{ $screenshot['image'] }}')" class="img"
+                            id="screenshot_{{ $screenshot['id'] }}"></div>
                     </button>
                 @endforeach
             </div>
         @endif
     </div>
     <br>
-    
 
-    <footer></footer>
-   
+    <br>
+    @include('components.frontend.gameTrailler', ['movies' => $movies])
+
+
 
     <script src="{{ asset('game/js/script.js') }}"></script>
-    
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 
 </body>

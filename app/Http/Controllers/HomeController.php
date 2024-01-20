@@ -21,7 +21,7 @@ class HomeController extends Controller
         $games = json_decode($jsonContent, true);
     */
     $apiKey = env('API_KEY');
-    $response = Http::get("https://api.rawg.io/api/games?dates=2020-10-10,2024-10-10&key={$apiKey}&page_size=100&page=2");
+    $response = Http::get("https://api.rawg.io/api/games?dates=2022-10-10,2024-10-10&key={$apiKey}&page_size=100&page=2");
     
     // Check if the request was successful
     if ($response->successful()) {
