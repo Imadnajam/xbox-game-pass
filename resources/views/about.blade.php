@@ -8,6 +8,7 @@
 	<!-- Page Title -->
 	<title>Game Pass | About</title>
     
+
 	<!-- Compressed Styles -->
 	<link href="{{ asset('about/css/slides.min.css?41331') }}" rel="stylesheet" type="text/css">
 
@@ -110,33 +111,7 @@
   </div>
 </nav>
 
-<!-- Panel Top #08 -->
-<nav class="panel top">
-  <div class="sections desktop">
-    <div class="left"><a href="#" title="Slides Framework"><svg style="width:82px;height:24px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></div>
-    <div class="center">
-      <ul class="menu uppercase">
-        <li><a href="#">Tour</a></li>
-        <li><a href="#">Upgrade</a></li>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Explore</a></li>
-      </ul>
-    </div>
-    <div class="right">
-      <ul class="menu trim">
-        <li><a href="http://facebook.com/designmodo" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
-        <li><a href="http://twitter.com/designmodo" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
-        <li class="cropRight"><a href="http://instagram.com/designmodo" class="trimRight" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="sections compact hidden">
-    <div class="left"><a href="#" title="Slides Framework"><svg style="width:82px;height:24px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></div>
-    <div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
-  </div>
-</nav>
 
-<!-- Sidebar -->
 <nav class="sidebar" data-sidebar-id="1">
   <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
   <div class="content">
@@ -175,11 +150,8 @@
 
         <div class="fix-12-12">
           <div class="fix-3-12">
-            <svg height="77" class="wide ae-1 fromCenter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>
-          </div>
-          <div class="button play small white popupTrigger ae-2 fromCenter margin-top-6 margin-bottom-6" data-popup-id="9">
-            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#play"></use></svg>
-          </div>
+       </div>
+         
           <p class="ae-3"><span class="opacity-8">Start now and get <b>free bonus</b> on account</span></p>
           <form class="slides-form" action="#" autocomplete="off">
             <input type="email" class="input-9 ae-4 fromCenter" name="user-email" placeholder="Email" val=""/>
