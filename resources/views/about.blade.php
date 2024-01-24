@@ -6,10 +6,10 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 
 	<!-- Page Title -->
-	<title>New Template — Slides 4.1 Template Generator</title>
-
+	<title>Game Pass | About</title>
+    
 	<!-- Compressed Styles -->
-	<link href="css/slides.min.css?41331" rel="stylesheet" type="text/css">
+	<link href="{{ asset('about/css/slides.min.css?41331') }}" rel="stylesheet" type="text/css">
 
 	<!-- Custom Styles -->
 	<!-- <link href="css/custom.css" rel="stylesheet" type="text/css"> -->
@@ -18,7 +18,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!-- Compressed Scripts -->
-	<script src="js/slides.min.js?41331" type="text/javascript"></script>
+	<script src="{{ asset('about/js/slides.min.js?41331') }}" type="text/javascript"></script>
 
 	<!-- Custom Scripts -->
 	<!-- <script src="js/custom.js" type="text/javascript"></script> -->
