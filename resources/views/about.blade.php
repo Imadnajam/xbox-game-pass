@@ -151,7 +151,8 @@
         <div class="fix-12-12">
           <div class="fix-3-12">
        </div>
-         
+       <a href="{{route('home')}}" class="button hollow ae-5"><img src="{{ asset('home/images/logo.svg') }}" height="150"/></a>
+       
           <p class="ae-3"><span class="opacity-8">Start now and get <b>free bonus</b> on account</span></p>
           <form class="slides-form" action="#" autocomplete="off">
             <input type="email" class="input-9 ae-4 fromCenter" name="user-email" placeholder="Email" val=""/>
@@ -358,7 +359,7 @@
             <button type="submit" class="button blue gradient ae-4" name="submit">Try it free</button>
           </form>
 
-          <a href="#" class="button hollow ae-5"><img src="assets/img/appstore.jpg" height="63"/></a><a href="#" class="button hollow ae-6"><img src="assets/img/googleplay.jpg" height="63"/></a>
+          <a href="{{route('home')}}" class="button hollow ae-5"><img src="{{ asset('home/images/logo.svg') }}" height="63"/></a>
         </div>
                 
       </div>
