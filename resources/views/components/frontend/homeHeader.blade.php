@@ -36,7 +36,7 @@
                 </li>
 
                 <li>
-                    <a href="#about" class="navbar-link">About</a>
+                    <a href="{{route('about')}}" class="navbar-link">About</a>
                 </li>
 
                 <li>
