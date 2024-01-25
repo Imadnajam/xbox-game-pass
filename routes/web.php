@@ -10,11 +10,16 @@ use App\Http\Controllers\signController;
 use App\Http\Controllers\GameDetaille;
 
 
+
+
+
 Route::get('/',[HomeController::class,'Homepage'])->name('home');
 Route::get('/allGames',[gamesController::class,'gameall'])->name('game');
-Route::get('/cart',[cart::class,'getPage'])->name('userCart');
 Route::get('/aboutp',[About::class,'getPage'])->name('about');
 
 Route::get('/sign_up',[signController::class,'sign'])->name('sign_up');
 Route::get('/login',[loginController::class,'login'])->name('login');
 Route::get('/game_detail/{id}', [GameDetaille::class, 'Display'])->name('GameDetaille');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/cart', [cart::class, 'getPage'])->name('userCart');
+});
