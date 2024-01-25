@@ -12,13 +12,14 @@
 
 
 
+   <main>
+    <article>
+        @include('components.frontend.shoppingCard')
+    </article>
+   </main>
 
 
-
-    <!--
-    - #FOOTER
-  -->
-
+   
     @include('components.frontend.footer')
 
 
