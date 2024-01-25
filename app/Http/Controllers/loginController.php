@@ -16,9 +16,13 @@ class LoginController extends Controller
     public function loginVerifUser(Request $request)
     {
         $credentials = $request->only('email', 'password');
+
         if (Auth::attempt($credentials)) {
+            // Authentication successful
             return redirect()->intended('home');
-         }
-        return back()->withInput()->withErrors(['email_u' => 'Invalid email or password']);
+        }
+
+        // Authentication failed
+        return back()->withInput()->withErrors(['email' => 'Invalid email or password']);
     }
 }

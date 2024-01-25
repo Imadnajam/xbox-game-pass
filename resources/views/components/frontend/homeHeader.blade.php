@@ -19,7 +19,7 @@
 
             <div class="navbar-top">
 
-                <a href="#" class="logo">
+                <a href="{{route('home')}}" class="logo">
                     <img src="{{ asset('home/images/logo.svg') }}" alt="GameX logo">
                 </a>
 
