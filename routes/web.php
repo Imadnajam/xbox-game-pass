@@ -20,6 +20,9 @@ Route::get('/aboutp',[About::class,'getPage'])->name('about');
 Route::get('/sign_up',[signController::class,'sign'])->name('sign_up');
 Route::get('/login',[loginController::class,'login'])->name('login');
 Route::get('/game_detail/{id}', [GameDetaille::class, 'Display'])->name('GameDetaille');
+Route::get('/loginv',[loginController::class,'loginVerifUser'])->name('loginVerif');
+
+
 Route::middleware(['auth'])->group(function () {
     Route::get('/cart', [cart::class, 'getPage'])->name('userCart');
 });

@@ -23,14 +23,14 @@
 
         <h6>Sign In</h6>
 
-        <form action="">
+        <form action="{{route('loginVerif')}}">
             <div class="textbox">
-                <input type="text" placeholder="Username or Email">
+                <input type="text" placeholder="Username or Email" name="email">
                 <span class="check-message hidden">Required</span>
             </div>
 
             <div class="textbox">
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Password" name="password">
                 <span class="check-message hidden">Required</span>
             </div>
 
