@@ -22,6 +22,9 @@ Route::get('/login',[loginController::class,'login'])->name('login');
 Route::get('/game_detail/{id}', [GameDetaille::class, 'Display'])->name('GameDetaille');
 Route::get('/loginv',[loginController::class,'loginVerifUser'])->name('loginVerif');
 
+Route::get('/sign_upV',[signController::class,'sign_up_user'])->name('sign_up_user');
+
+
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/cart', [cart::class, 'getPage'])->name('userCart');

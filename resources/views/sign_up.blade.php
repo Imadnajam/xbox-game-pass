@@ -23,22 +23,22 @@
 
         <h6>Sign up</h6>
 
-        <form action="">
+        <form action="{{route('sign_up_user')}}">
             <div class="textbox">
-                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Username" name="name">
                 <span class="check-message hidden">Required</span>
             </div>
             <div class="textbox">
-                <input type="email" placeholder="Email">
+                <input type="email" placeholder="Email" name="email">
                 <span class="check-message hidden">Required</span>
             </div>
 
             <div class="textbox">
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Password" name="password">
                 <span class="check-message hidden">Required</span>
             </div>
             <div class="textbox">
-                <input type="password" placeholder="Confirm Password">
+                <input type="password" placeholder="Confirm Password" name="password_v">
                 <span class="check-message hidden">Required</span>
             </div>
 
@@ -54,7 +54,7 @@
                 <a href="#">Forgot Your Password</a>
             </div>
 
-            <input type="submit" value="Log In Now" class="login-btn" disabled>
+            <input type="submit" value="craet acount" class="login-btn" disabled>
             <div class="privacy-link">
                 <a href="#">Privacy Policy</a>
             </div>
