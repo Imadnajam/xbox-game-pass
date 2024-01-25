@@ -44,7 +44,7 @@
                 </li>
 
                 <li>
-                    <a href="#contact" class="navbar-link">Contact</a>
+                    <a href="#" class="navbar-link">cart</a>
                 </li>
 
             </ul>
