@@ -29,15 +29,7 @@
                     <div class="card-prize">$<!-- Add actual price here --></div>
                 </div>
 
-                <div class="card-actions">
-                    <button class="btn btn-primary">
-                        <ion-icon name="add-outline"></ion-icon>
-                        <span>Add to Cart</span>
-                    </button>
-                    <button class="btn card-btn">
-                        <ion-icon name="heart-outline"></ion-icon>
-                    </button>
-                </div>
+              
             </div>
         </li>
             @endforeach

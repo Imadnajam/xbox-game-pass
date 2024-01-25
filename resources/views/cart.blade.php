@@ -14,7 +14,9 @@
 
    <main>
     <article>
+      <div class="section-wrapper">
         @include('components.frontend.shoppingCard')
+      </div>
     </article>
    </main>
 
