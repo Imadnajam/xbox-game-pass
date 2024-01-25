@@ -23,7 +23,9 @@
 
         <h6>Sign In</h6>
 
-        <form action="{{route('loginVerif')}}">
+        <form action="{{route('loginVerif')}}" method="POST">
+            @csrf
+            
             <div class="textbox">
                 <input type="text" placeholder="Username or Email" name="email">
                 <span class="check-message hidden">Required</span>

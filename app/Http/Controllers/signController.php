@@ -15,19 +15,13 @@ class SignController extends Controller
 
     public function sign_up_user(Request $request)
     {
-        // Validate user input
+        
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|min:6|confirmed',
         ]);
     
-        // If validation fails, redirect back with errors
-        if ($validator->fails()) {
-            return redirect()->back()->withErrors($validator)->withInput();
-        }
-    
-        // Create a new user
         $user = User::create([
             'name' => $request->input('name'),
             'email' => $request->input('email'),

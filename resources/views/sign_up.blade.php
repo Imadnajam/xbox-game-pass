@@ -23,29 +23,38 @@
 
         <h6>Sign up</h6>
 
-        <form action="{{route('sign_up_user')}}">
+        <form action="{{route('sign_up_user')}}" method="POST">
+            @csrf
             <div class="textbox">
-                <input type="text" placeholder="Username" name="name">
-                <span class="check-message hidden">Required</span>
+                <input type="text" placeholder="Username" name="name" value="{{ old('name') }}">
+                @error('name')
+                    <span class="check-message">{{ $message }}</span>
+                @enderror
             </div>
             <div class="textbox">
-                <input type="email" placeholder="Email" name="email">
-                <span class="check-message hidden">Required</span>
+                <input type="email" placeholder="Email" name="email" value="{{ old('email') }}">
+                @error('email')
+                    <span class="check-message">{{ $message }}</span>
+                @enderror
             </div>
 
             <div class="textbox">
                 <input type="password" placeholder="Password" name="password">
-                <span class="check-message hidden">Required</span>
+                @error('password')
+                    <span class="check-message">{{ $message }}</span>
+                @enderror
             </div>
             <div class="textbox">
-                <input type="password" placeholder="Confirm Password" name="password_v">
-                <span class="check-message hidden">Required</span>
+                <input type="password" placeholder="Confirm Password" name="password_confirmation">
+                @error('password_confirmation')
+                    <span class="check-message">{{ $message }}</span>
+                @enderror
             </div>
 
             <div class="options">
                 <label class="remember-me">
                     <span class="checkbox">
-                        <input type="checkbox">
+                        <input type="checkbox" name="remember">
                         <span class="checked"></span>
                     </span>
                     Remember me
@@ -54,7 +63,7 @@
                 <a href="#">Forgot Your Password</a>
             </div>
 
-            <input type="submit" value="craet acount" class="login-btn" disabled>
+            <input type="submit" value="create account" class="login-btn">
             <div class="privacy-link">
                 <a href="#">Privacy Policy</a>
             </div>

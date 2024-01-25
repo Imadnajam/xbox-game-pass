@@ -20,9 +20,9 @@ Route::get('/aboutp',[About::class,'getPage'])->name('about');
 Route::get('/sign_up',[signController::class,'sign'])->name('sign_up');
 Route::get('/login',[loginController::class,'login'])->name('login');
 Route::get('/game_detail/{id}', [GameDetaille::class, 'Display'])->name('GameDetaille');
-Route::get('/loginv',[loginController::class,'loginVerifUser'])->name('loginVerif');
+Route::post('/loginv',[loginController::class,'loginVerifUser'])->name('loginVerif');
 
-Route::get('/sign_upV',[signController::class,'sign_up_user'])->name('sign_up_user');
+Route::post('/sign_upV',[signController::class,'sign_up_user'])->name('sign_up_user');
 
 
 
