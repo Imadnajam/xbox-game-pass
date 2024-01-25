@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\gamesController;
 use App\Http\Controllers\About;
-use App\Http\Controllers\cart;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\signController;
 use App\Http\Controllers\GameDetaille;
@@ -27,7 +27,7 @@ Route::post('/sign_upV',[signController::class,'sign_up_user'])->name('sign_up_u
 
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/cart', [cart::class, 'getPage'])->name('userCart');
-    Route::get('/cart/{id}', [cart::class, 'AddToCart'])->name('AddToCart');
+    Route::get('/cart', [CartController::class, 'getPage'])->name('userCart');
+    Route::get('/cart/{id}', [CartController::class, 'AddToCart'])->name('AddToCart');
     
 });
