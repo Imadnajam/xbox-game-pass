@@ -28,4 +28,6 @@ Route::post('/sign_upV',[signController::class,'sign_up_user'])->name('sign_up_u
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/cart', [cart::class, 'getPage'])->name('userCart');
+    Route::get('/cart/{id}', [cart::class, 'AddToCart'])->name('AddToCart');
+    
 });

@@ -9,4 +9,7 @@ class cart extends Controller
    public function getPage(){
     return view('cart');
    }
+   public function AddToCart($id){
+
+   }
 }
