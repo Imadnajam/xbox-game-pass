@@ -44,7 +44,7 @@
                 </li>
 
                 <li>
-                    <a href="#" class="navbar-link">cart</a>
+                    <a href="{{route('userCart')}}" class="navbar-link">cart</a>
                 </li>
 
             </ul>
