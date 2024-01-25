@@ -4,8 +4,8 @@
         <h2 class="h2 section-title">check you cart</h2>
 
         <ul class="gears-list">
-        @if(!empty($gamesPaginated))
-         @foreach ($gamesPaginated as $gameId => $game) 
+        @if(!empty($games))
+         @foreach ($games as $gameId => $game) 
          <li>
             <div class="gears-card">
                 <div class="card-banner">
