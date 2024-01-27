@@ -34,4 +34,10 @@ public function getPage()
     
         return redirect()->route('home')->with('success', 'Item added to cart successfully');
     }
+    public function removeFromCart($id)
+    {
+        cart::destroy($id);
+        return back()->with('success', 'Item removed from cart successfully');
+
+    }
 }

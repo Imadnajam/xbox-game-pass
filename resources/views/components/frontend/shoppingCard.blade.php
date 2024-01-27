@@ -30,7 +30,7 @@
                 </div>
                 <button class="btn btn-primary" style="background-color: red">
                     <ion-icon name="remove-outline"></ion-icon>
-                   <a href="{{route('removFromCart',['id'=>$game['id']])}}" style="color: white"><span>remove from cart</span></a> 
+                   <a href="{{route('removeFromCart',['id'=>$game['id']])}}" style="color: white"><span>remove from cart</span></a> 
                 </button>
 
               
