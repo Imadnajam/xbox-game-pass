@@ -29,5 +29,7 @@ Route::post('/sign_upV',[signController::class,'sign_up_user'])->name('sign_up_u
 Route::middleware(['auth'])->group(function () {
     Route::get('/cart', [CartController::class, 'getPage'])->name('userCart');
     Route::get('/cart/{id}', [CartController::class, 'AddToCart'])->name('AddToCart');
+    Route::get('/cart/{id}', [CartController::class, 'removFromCart'])->name('removFromCart');
+    
     
 });
