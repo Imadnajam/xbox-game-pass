@@ -24,7 +24,7 @@
                 <div class="card-content">
                     <div class="card-title-wrapper">
                         <h3 class="h3 card-title">{{ $game['name'] }}</h3>
-                        <p class="card-subtitle">Xbox</p>
+                        <p class="card-subtitle">Xbox | PLAYSTATION</p>
                     </div>
                     <div class="card-prize">$<!-- Add actual price here --></div>
                 </div>
