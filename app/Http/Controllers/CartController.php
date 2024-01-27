@@ -32,7 +32,7 @@ public function getPage()
         $cartItem->save();
 
     
-        return redirect()->route('home')->with('success', 'Item added to cart successfully');
+        return back()->with('success', 'Item added to cart successfully');
     }
     public function removeFromCart($id)
     {

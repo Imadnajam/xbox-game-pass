@@ -25,11 +25,8 @@ Route::post('/loginv',[loginController::class,'loginVerifUser'])->name('loginVer
 Route::post('/sign_upV',[signController::class,'sign_up_user'])->name('sign_up_user');
 
 
-
 Route::middleware(['auth'])->group(function () {
     Route::get('/cart', [CartController::class, 'getPage'])->name('userCart');
-    Route::get('/cart/{id}', [CartController::class, 'AddToCart'])->name('AddToCart');
+    Route::post('/cart/{id}', [CartController::class, 'addToCart'])->name('addToCart');
     Route::get('/cart/{id}', [CartController::class, 'removeFromCart'])->name('removeFromCart');
-    
-    
 });

@@ -32,7 +32,7 @@
                         <div class="card-actions">
                             <button class="btn btn-primary">
                                 <ion-icon name="add-outline"></ion-icon>
-                               <a href="{{route('AddToCart',['id'=>$game['id']])}}" style="color: white"><span>Add to cart</span></a> 
+                               <a href="{{route('addToCart',['id'=>$game['id']])}}" style="color: white"><span>Add to cart</span></a> 
                             </button>
                             <button class="btn card-btn">
                                 <ion-icon name="heart-outline"></ion-icon>
