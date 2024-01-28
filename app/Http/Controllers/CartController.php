@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Http;
 use App\Models\cart;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CartController extends Controller
 {
@@ -34,10 +35,25 @@ public function getPage()
     
         return back()->with('success', 'Item added to cart successfully');
     }
-    public function removeFromCart($id)
-    {
-        cart::destroy($id);
-        return back()->with('success', 'Item removed from cart successfully');
+    
+public function removeFromCart($id)
+{
+    
+    $user = Auth::user();
 
+    
+    $cartItem = cart::where('user_id', $user->id)
+                    ->where('game_id', $id)
+                    ->first();
+
+   
+    if ($cartItem) {
+       
+        $cartItem->delete();
+
+        return back()->with('success', 'Item removed from cart successfully');
     }
+
+    return back()->with('error', 'Item not found in cart');
+}
 }
