@@ -36,7 +36,7 @@ public function getPage()
         return back()->with('success', 'Item added to cart successfully');
     }
     
-public function removeFromCart($id)
+    public function removeFromCart($id)
 {
     
     $user = Auth::user();
