@@ -28,11 +28,12 @@
                     </div>
                     <div class="card-prize">$<!-- Add actual price here --></div>
                 </div>
+                <div class="card-actions">
                 <button class="btn btn-primary" style="background-color: red">
                     <ion-icon name="remove-outline"></ion-icon>
                    <a href="{{route('removFromCart',['id'=>$game['id']])}}" style="color: white"><span>remove from cart</span></a> 
                 </button>
-
+                </div>  
               
             </div>
         </li>
