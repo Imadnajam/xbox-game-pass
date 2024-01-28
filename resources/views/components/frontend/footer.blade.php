@@ -18,23 +18,16 @@
                         </li>
 
                         <li>
-                            <a href="#about" class="footer-menu-link">About</a>
+                            <a href="{{route('about')}}" class="footer-menu-link">About</a>
+                        </li>
+
+
+                        <li>
+                            <a href="{{route('game')}}" class="footer-menu-link">Game</a>
                         </li>
 
                         <li>
-                            <a href="#tournament" class="footer-menu-link">Tournament</a>
-                        </li>
-
-                        <li>
-                            <a href="#team" class="footer-menu-link">Team</a>
-                        </li>
-
-                        <li>
-                            <a href="#gears" class="footer-menu-link">Gears</a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="footer-menu-link">Contact</a>
+                            <a href="{{route('userCart')}}" class="footer-menu-link">Cart</a>
                         </li>
 
                     </ul>
