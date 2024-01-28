@@ -40,7 +40,7 @@
                 </li>
 
                 <li>
-                    <a href="{{route('game')}}" class="navbar-link">Games</a>
+                    <a href="{{route('game')}}" class="navbar-link">Game</a>
                 </li>
 
                 <li>
