@@ -59,7 +59,8 @@
                 <div id="slider-{{ $index + 1 }}" class="slider-content {{ $index == 0 ? 'active' : '' }}">
                     <div class="info">
                         <h3>{{ $gameData['name'] }}</h3>
-                        <button>add to cart</button>
+                        <a href="{{route('addToCart',['id'=>$gameData['id']])}}" style="color: white"><button>Add to cart</button></a> 
+                           
                     </div>
                     <div class="background" style="background-image: url('{{ $screenshot['image'] }}');">
                     </div>
