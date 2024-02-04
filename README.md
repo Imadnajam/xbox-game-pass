@@ -33,6 +33,29 @@
 - [Documentation](#documentation)
 - [License](#license)
 
+### Home Page
+![Home Page](https://github.com/Imadnajam/xbox-game-pass/blob/main/screenshot/1.png)
+
+### gaer section
+![Home Page](https://github.com/Imadnajam/xbox-game-pass/blob/main/screenshot/2.png)
+
+![Home Page](https://github.com/Imadnajam/xbox-game-pass/blob/main/screenshot/3.png)
+
+![Home Page](https://github.com/Imadnajam/xbox-game-pass/blob/main/screenshot/4.png)
+
+![Home Page](https://github.com/Imadnajam/xbox-game-pass/blob/main/screenshot/5.png)
+
+![Home Page](https://github.com/Imadnajam/xbox-game-pass/blob/main/screenshot/6.png)
+
+![Home Page](https://github.com/Imadnajam/xbox-game-pass/blob/main/screenshot/7.png)
+
+![Home Page](https://github.com/Imadnajam/xbox-game-pass/blob/main/screenshot/8.png)
+
+![Home Page](https://github.com/Imadnajam/xbox-game-pass/blob/main/screenshot/9.png)
+
+![Home Page](https://github.com/Imadnajam/xbox-game-pass/blob/main/screenshot/10.png)
+
+
 ## Features
 
 - User authentication and profile management.
