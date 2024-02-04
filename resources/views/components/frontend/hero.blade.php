@@ -4,7 +4,7 @@
 
         <p class="hero-subtitle">Découvre ton prochain jeu favori</p>
 
-        <h1 class="h1 hero-title">Steam</h1>
+        <h1 class="h1 hero-title">Xbox</h1>
 
         <div class="btn-group">
 
